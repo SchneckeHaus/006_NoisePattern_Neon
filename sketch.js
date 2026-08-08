@@ -4,11 +4,11 @@ const CANVAS_HEIGHT = 800
 const CELL_SIZE = 20
 const ROW_AMOUNT = CANVAS_HEIGHT/20
 const COLUMN_AMOUNT = CANVAS_WIDTH/20
-const NOISE_SCALE = 0.3
+const NOISE_SCALE = 0.005
 
 //this function builds the main grid function for the whole project
 //included noise based grid fill
-function Grid (x,y){
+function GridFill (x,y){
     for (let i = 0; i < COLUMN_AMOUNT; i++) {
       for (let n = 0; n < ROW_AMOUNT; n++) {
         let x = i * CELL_SIZE;
@@ -33,5 +33,5 @@ function setup() {
 function draw() {
   background("#2A252C");
   noLoop();
-  Grid(0,0)
+  GridFill(0,0)
 }
