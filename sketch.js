@@ -20,7 +20,7 @@ function drawNoisePattern (x,y){
             fill(0); // moving rect function inline as we need to 
             //add the pattern part
             rect(x, y, CELL_SIZE, CELL_SIZE);
-            //TO DO _add pattern here_
+            //TO DO _add pattern class here_
             
             // dev principle - build the simplest thing that works 
         }
@@ -33,6 +33,13 @@ function drawNoisePattern (x,y){
       }
     }
 }
+// function concentric circle patter
+//function cross pattern 1
+//function cross pattern 2
+//function sqaure with circle
+// function centered dot 
+// pattern class 
+
 
 
 function setup() {
