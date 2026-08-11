@@ -84,8 +84,8 @@ function Cross (length, width,bevel){
 //this is a basic cross, it draws the skeleton
 //it can also accept x and y so it can translate the CROSS which is now its own object
 function basicCross (x,y){
-  const CROSS_WIDTH = 2
-  const CROSS_LENGTH = CELL_SIZE - 7
+  let CROSS_WIDTH = 2
+  let CROSS_LENGTH = CELL_SIZE - 7
   push ();
   translate(x + COLUMN_SIZE/2, y + ROW_SIZE /2)
   Cross(CROSS_LENGTH, CROSS_WIDTH); //this takes the basic skeleton
@@ -94,8 +94,8 @@ function basicCross (x,y){
 
 //
 function thickCross(x,y,bevel){
-  const CROSS_WIDTH = 4
-  const CROSS_LENGTH = CELL_SIZE - 7
+  let CROSS_WIDTH = 4
+  let CROSS_LENGTH = CELL_SIZE - 7
   push();
   translate(x + COLUMN_SIZE/2, y + ROW_SIZE /2);
   rotate(45);
